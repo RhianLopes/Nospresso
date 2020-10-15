@@ -1,24 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R96-lu-Em2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="spC-vB-Vkx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Sm7-gu-uWb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1g-45-8V3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrL-L2-o7M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="256.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="wWK-GK-lFd">
+                                        <rect key="frame" x="278" y="70" width="136" height="136"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Mz-IA-1E7">
+                                        <rect key="frame" x="28" y="168.5" width="183" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafés" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9E-DI-phm">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="35.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cremosos, espumosos, hmm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDM-3P-CeP">
+                                                <rect key="frame" x="0.0" y="43.5" width="183" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Cafes"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="wWK-GK-lFd" firstAttribute="centerY" secondItem="hrL-L2-o7M" secondAttribute="centerY" constant="10" id="NLm-16-kCN"/>
+                                    <constraint firstItem="2Mz-IA-1E7" firstAttribute="leading" secondItem="hrL-L2-o7M" secondAttribute="leading" constant="28" id="RS0-lQ-2bx"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Mz-IA-1E7" secondAttribute="bottom" constant="25" id="pZ5-fg-wFj"/>
+                                    <constraint firstAttribute="trailing" secondItem="wWK-GK-lFd" secondAttribute="trailing" id="zeO-cA-GtE"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tFo-xL-mR7" appends="YES" id="Slv-oG-9nM"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg4-uV-y4Q">
+                                <rect key="frame" x="0.0" y="300.5" width="414" height="256"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="C7A-Wc-EAj">
+                                        <rect key="frame" x="294" y="65" width="120" height="146"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jO2-vD-IMp">
+                                        <rect key="frame" x="28" y="168" width="141.5" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bm-te-ILu">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="35.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem elas não rola café" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiW-Pk-cR9">
+                                                <rect key="frame" x="0.0" y="43.5" width="141.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Maquinas"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jO2-vD-IMp" secondAttribute="bottom" constant="25" id="I9r-5g-bP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="C7A-Wc-EAj" secondAttribute="trailing" id="V5W-ck-nOK"/>
+                                    <constraint firstItem="jO2-vD-IMp" firstAttribute="leading" secondItem="hg4-uV-y4Q" secondAttribute="leading" constant="28" id="XoD-Pl-yuk"/>
+                                    <constraint firstItem="C7A-Wc-EAj" firstAttribute="centerY" secondItem="hg4-uV-y4Q" secondAttribute="centerY" constant="10" id="j5t-rf-euX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-4l-IyE">
+                                <rect key="frame" x="0.0" y="556.5" width="414" height="256.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xicaras-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="N3q-Ua-zkc">
+                                        <rect key="frame" x="267" y="65" width="147" height="147"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-NB-J4d">
+                                        <rect key="frame" x="28" y="168.5" width="144" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acessórios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmG-Dw-Tnt">
+                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="35.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pra completar a balaca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-AD-lu7">
+                                                <rect key="frame" x="0.0" y="43.5" width="144" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Acessorios"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="N3q-Ua-zkc" secondAttribute="trailing" id="E8R-Wu-p1O"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ha-NB-J4d" secondAttribute="bottom" constant="25" id="LlP-qj-Ufj"/>
+                                    <constraint firstItem="N3q-Ua-zkc" firstAttribute="centerY" secondItem="Kh2-4l-IyE" secondAttribute="centerY" constant="10" id="c5k-C0-lhe"/>
+                                    <constraint firstItem="5ha-NB-J4d" firstAttribute="leading" secondItem="Kh2-4l-IyE" secondAttribute="leading" constant="28" id="jGo-fW-6XT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Po9-hg-eF2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hg4-uV-y4Q" firstAttribute="leading" secondItem="Po9-hg-eF2" secondAttribute="leading" id="6gz-gl-c8h"/>
+                            <constraint firstItem="hrL-L2-o7M" firstAttribute="height" secondItem="Po9-hg-eF2" secondAttribute="height" multiplier="1/3" id="C4R-I1-Xhs"/>
+                            <constraint firstItem="hg4-uV-y4Q" firstAttribute="height" secondItem="Po9-hg-eF2" secondAttribute="height" multiplier="1/3" id="DOb-4q-jGD"/>
+                            <constraint firstItem="hrL-L2-o7M" firstAttribute="leading" secondItem="Po9-hg-eF2" secondAttribute="leading" id="UD7-YP-NVz"/>
+                            <constraint firstItem="Kh2-4l-IyE" firstAttribute="height" secondItem="Po9-hg-eF2" secondAttribute="height" multiplier="1/3" id="bvs-iW-9en"/>
+                            <constraint firstItem="Po9-hg-eF2" firstAttribute="trailing" secondItem="Kh2-4l-IyE" secondAttribute="trailing" id="dxJ-7C-Cqz"/>
+                            <constraint firstItem="hrL-L2-o7M" firstAttribute="top" secondItem="Po9-hg-eF2" secondAttribute="top" id="hMF-GG-2q6"/>
+                            <constraint firstItem="Kh2-4l-IyE" firstAttribute="top" secondItem="hg4-uV-y4Q" secondAttribute="bottom" id="lYw-9C-bml"/>
+                            <constraint firstItem="Po9-hg-eF2" firstAttribute="trailing" secondItem="hg4-uV-y4Q" secondAttribute="trailing" id="lff-KP-Cys"/>
+                            <constraint firstItem="Kh2-4l-IyE" firstAttribute="leading" secondItem="Po9-hg-eF2" secondAttribute="leading" id="t2U-WS-FTT"/>
+                            <constraint firstItem="hg4-uV-y4Q" firstAttribute="top" secondItem="hrL-L2-o7M" secondAttribute="bottom" id="tuI-Sw-4fO"/>
+                            <constraint firstItem="Po9-hg-eF2" firstAttribute="trailing" secondItem="hrL-L2-o7M" secondAttribute="trailing" id="xTA-8W-u9W"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vnl-zY-J9E"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jz-JX-elE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tFo-xL-mR7">
+                    <connections>
+                        <segue destination="U0B-IR-t5u" kind="show" id="3ng-q9-9i6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-532" y="750"/>
+        </scene>
+        <!--Cafes Table View Controller-->
+        <scene sceneID="7kA-aq-7Sf">
+            <objects>
+                <tableViewController id="U0B-IR-t5u" customClass="CafesTableViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yeN-zO-4Qy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafe-cell" rowHeight="100" id="AWQ-Ah-tYP" customClass="CafeTableViewCell" customModule="Nospresso" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AWQ-Ah-tYP" id="I3o-5L-Elf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-55-Tv4">
+                                            <rect key="frame" x="18" y="23.5" width="53" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="53" id="Hro-Vl-tCc"/>
+                                                <constraint firstAttribute="height" constant="53" id="fLy-KJ-USe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4j-Z0-abe">
+                                            <rect key="frame" x="96" y="21" width="50" height="26"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
+                                            <color key="textColor" name="TextoCinzaEscuro"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vx3-55-Tv4" firstAttribute="centerY" secondItem="I3o-5L-Elf" secondAttribute="centerY" id="Qpf-3d-F7H"/>
+                                        <constraint firstItem="f4j-Z0-abe" firstAttribute="top" secondItem="I3o-5L-Elf" secondAttribute="topMargin" constant="10" id="hsP-UU-nSQ"/>
+                                        <constraint firstItem="Vx3-55-Tv4" firstAttribute="leading" secondItem="I3o-5L-Elf" secondAttribute="leading" constant="18" id="liL-Rp-JWC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cafeImageView" destination="Vx3-55-Tv4" id="THI-ax-ecE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="U0B-IR-t5u" id="Kpw-9X-FiP"/>
+                            <outlet property="delegate" destination="U0B-IR-t5u" id="edT-aL-7ic"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="w5W-FU-U86"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEF-jm-Cx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="750"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rSk-Hq-ZTE">
+            <objects>
+                <tabBarController id="R96-lu-Em2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j7P-Qm-ez9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PKe-qx-v6B" kind="relationship" relationship="viewControllers" id="Gjl-tb-En7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgi-6f-RcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="24"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="9Ov-Pu-Ynv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PKe-qx-v6B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Produtos" image="cart" catalog="system" id="lKo-dn-HGh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sfv-eg-ACX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sm7-gu-uWb" kind="relationship" relationship="rootViewController" id="Fyd-2d-Vbp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1p-uB-Ksi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1486" y="750"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="capsulas-inicio" width="136" height="136"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <image name="xicaras-inicio" width="147" height="147"/>
+        <namedColor name="Acessorios">
+            <color red="0.94901960784313721" green="0.8901960784313725" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cafes">
+            <color red="0.92941176470588238" green="0.87058823529411766" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Maquinas">
+            <color red="0.86274509803921573" green="0.72156862745098038" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextoCinzaEscuro">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
