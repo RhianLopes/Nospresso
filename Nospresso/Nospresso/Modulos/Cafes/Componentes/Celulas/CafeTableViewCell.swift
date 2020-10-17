@@ -9,8 +9,10 @@ import UIKit
 
 class CafeTableViewCell: UITableViewCell {
     
-    
-
     @IBOutlet weak var cafeImageView: UIImageView!
+    
+    func configurar(com cafe: Cafe) {
+        cafeImageView.carregarImagem(usando: cafe.imagem)
+    }
     
 }
