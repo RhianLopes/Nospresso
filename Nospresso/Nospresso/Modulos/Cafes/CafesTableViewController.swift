@@ -74,4 +74,11 @@ extension CafesTableViewController {
         celula.configurar(com: cafe)
         return celula
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cafe = categorias[indexPath.section].cafes[indexPath.row]
+        
+        let detalheVC = DetalheCafePresenter.criarModulo(passando: cafe)
+        navigationController?.pushViewController(detalheVC, animated: true)
+    }
 }

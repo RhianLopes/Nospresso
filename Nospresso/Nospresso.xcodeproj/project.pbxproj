@@ -16,6 +16,11 @@
 		F14C8B4A253B30E6001255AE /* CategoriaDeCafeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C8B49253B30E6001255AE /* CategoriaDeCafeHeaderView.swift */; };
 		F14C8B4C253B312E001255AE /* CategoriaDeCafeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14C8B4B253B312E001255AE /* CategoriaDeCafeHeaderView.xib */; };
 		F14C8B4E253B3C2D001255AE /* UIImageView+CarregarImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C8B4D253B3C2D001255AE /* UIImageView+CarregarImagem.swift */; };
+		F15BDD15253FA7A600127872 /* Double+Dinheiros.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BDD14253FA7A600127872 /* Double+Dinheiros.swift */; };
+		F18CB9CE253F76B700CEDA4A /* DetalheCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CB9CD253F76B600CEDA4A /* DetalheCafeViewController.swift */; };
+		F18CB9D1253F811B00CEDA4A /* ContadorIntensidadeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CB9D0253F811B00CEDA4A /* ContadorIntensidadeStackView.swift */; };
+		F18CB9D3253F877500CEDA4A /* DetalheCafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CB9D2253F877500CEDA4A /* DetalheCafePresenter.swift */; };
+		F18CB9D5253F87F500CEDA4A /* DetalheCafe+Protocolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CB9D4253F87F500CEDA4A /* DetalheCafe+Protocolo.swift */; };
 		F19D24A92536390300FA7B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D24A82536390300FA7B4F /* AppDelegate.swift */; };
 		F19D24AB2536390300FA7B4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D24AA2536390300FA7B4F /* SceneDelegate.swift */; };
 		F19D24AD2536390300FA7B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D24AC2536390300FA7B4F /* ViewController.swift */; };
@@ -80,6 +85,11 @@
 		F14C8B49253B30E6001255AE /* CategoriaDeCafeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeCafeHeaderView.swift; sourceTree = "<group>"; };
 		F14C8B4B253B312E001255AE /* CategoriaDeCafeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeCafeHeaderView.xib; sourceTree = "<group>"; };
 		F14C8B4D253B3C2D001255AE /* UIImageView+CarregarImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+CarregarImagem.swift"; sourceTree = "<group>"; };
+		F15BDD14253FA7A600127872 /* Double+Dinheiros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Dinheiros.swift"; sourceTree = "<group>"; };
+		F18CB9CD253F76B600CEDA4A /* DetalheCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafeViewController.swift; sourceTree = "<group>"; };
+		F18CB9D0253F811B00CEDA4A /* ContadorIntensidadeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorIntensidadeStackView.swift; sourceTree = "<group>"; };
+		F18CB9D2253F877500CEDA4A /* DetalheCafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafePresenter.swift; sourceTree = "<group>"; };
+		F18CB9D4253F87F500CEDA4A /* DetalheCafe+Protocolo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetalheCafe+Protocolo.swift"; sourceTree = "<group>"; };
 		F19D24A52536390300FA7B4F /* Nospresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nospresso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19D24A82536390300FA7B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19D24AA2536390300FA7B4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +182,7 @@
 				F14C8B40253B1E45001255AE /* UIViewController+Barbadas.swift */,
 				F14C8B45253B2F3C001255AE /* Pseudonimos.swift */,
 				F14C8B4D253B3C2D001255AE /* UIImageView+CarregarImagem.swift */,
+				F15BDD14253FA7A600127872 /* Double+Dinheiros.swift */,
 			);
 			path = Extensoes;
 			sourceTree = "<group>";
@@ -192,6 +203,25 @@
 				F14C8B4B253B312E001255AE /* CategoriaDeCafeHeaderView.xib */,
 			);
 			path = Celulas;
+			sourceTree = "<group>";
+		};
+		F18CB9CC253F769B00CEDA4A /* DetalheCafe */ = {
+			isa = PBXGroup;
+			children = (
+				F18CB9CF253F80D400CEDA4A /* Componentes */,
+				F18CB9CD253F76B600CEDA4A /* DetalheCafeViewController.swift */,
+				F18CB9D2253F877500CEDA4A /* DetalheCafePresenter.swift */,
+				F18CB9D4253F87F500CEDA4A /* DetalheCafe+Protocolo.swift */,
+			);
+			path = DetalheCafe;
+			sourceTree = "<group>";
+		};
+		F18CB9CF253F80D400CEDA4A /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				F18CB9D0253F811B00CEDA4A /* ContadorIntensidadeStackView.swift */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 		F19D249C2536390300FA7B4F = {
@@ -303,6 +333,7 @@
 		F1C232AD2538F3A800A3DD78 /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				F18CB9CC253F769B00CEDA4A /* DetalheCafe */,
 				F1C232AE2538F3B300A3DD78 /* Cafes */,
 				F14C8B3D253B167E001255AE /* MenuProdutosViewController.swift */,
 			);
@@ -611,16 +642,21 @@
 				F14C8B4E253B3C2D001255AE /* UIImageView+CarregarImagem.swift in Sources */,
 				F14C8B46253B2F3C001255AE /* Pseudonimos.swift in Sources */,
 				F14C8B44253B2E91001255AE /* R.generated.swift in Sources */,
+				F18CB9D3253F877500CEDA4A /* DetalheCafePresenter.swift in Sources */,
 				F14C8B3E253B167E001255AE /* MenuProdutosViewController.swift in Sources */,
 				F1C232B02538F3CB00A3DD78 /* CafesTableViewController.swift in Sources */,
 				F19D24E12536591200FA7B4F /* Api.swift in Sources */,
+				F18CB9D1253F811B00CEDA4A /* ContadorIntensidadeStackView.swift in Sources */,
 				F19D24AD2536390300FA7B4F /* ViewController.swift in Sources */,
+				F15BDD15253FA7A600127872 /* Double+Dinheiros.swift in Sources */,
 				F14C8B4A253B30E6001255AE /* CategoriaDeCafeHeaderView.swift in Sources */,
+				F18CB9CE253F76B700CEDA4A /* DetalheCafeViewController.swift in Sources */,
 				F14C8B41253B1E45001255AE /* UIViewController+Barbadas.swift in Sources */,
 				F19D24DA2536582600FA7B4F /* CategoriaCafe.swift in Sources */,
 				F19D24E525365D1300FA7B4F /* Item.swift in Sources */,
 				F19D24A92536390300FA7B4F /* AppDelegate.swift in Sources */,
 				F19D24DC2536587B00FA7B4F /* Cafe.swift in Sources */,
+				F18CB9D5253F87F500CEDA4A /* DetalheCafe+Protocolo.swift in Sources */,
 				F19D24AB2536390300FA7B4F /* SceneDelegate.swift in Sources */,
 				F19D24E925365DAD00FA7B4F /* Maquina.swift in Sources */,
 				F19D24E725365D6B00FA7B4F /* Acessorio.swift in Sources */,
