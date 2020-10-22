@@ -10,6 +10,10 @@ import UIKit
 class DetalheCafeViewController: UIViewController {
     
     @IBOutlet weak var cafeImageView: UIImageView!
+    @IBOutlet weak var intensidadeStackView: ContadorIntensidadeStackView!
+    @IBOutlet weak var medidaStackView: UIStackView!
+    @IBOutlet weak var intensidadeLabel: UILabel!
+    
     
     var presenter: DetalheCafePresenter?
     
@@ -29,6 +33,22 @@ extension DetalheCafeViewController: DetalheCafeViewType {
     func exibirDados(do cafe: Cafe) {
         DispatchQueue.main.async {
             self.cafeImageView.carregarImagem(usando: cafe.imagem)
+            
+            if let intensidade = cafe.intensidade {
+                self.intensidadeStackView.configurar(para: intensidade)
+                
+                self.intensidadeLabel.text = "intensidade: \(intensidade)"
+            } else {
+                self.intensidadeLabel.isHidden = true
+            }
+            
+            for medida in cafe.medidas {
+                let view = MedidaView.doNib()
+                view.configurar(com: medida)
+                self.medidaStackView.addArrangedSubview(view)
+            }
+            
+            self.medidaStackView.addArrangedSubview(UIView())
         }
     }
 }
