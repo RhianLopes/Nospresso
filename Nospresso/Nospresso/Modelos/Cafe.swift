@@ -7,7 +7,11 @@
 
 import Foundation
 
-public struct Cafe: Decodable {
+public struct Cafe: Produto {
+    var preco: Double { precoUnitario }
+    
+    var tipo: TipoProduto { .cafe }
+    
     
     let id: Int
     let nome: String
@@ -20,7 +24,7 @@ public struct Cafe: Decodable {
     let torrefacao: String?
     let perfilAromatico: String?
     
-    enum MedidaCafe: String, Decodable {
+    enum MedidaCafe: String, Codable {
         case ristretto, lungo, espresso
     }
 }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheProdutoModalViewController" customModule="Nospresso" customModuleProvider="target">
+            <connections>
+                <outlet property="descricaoLabel" destination="hIa-a6-PJP" id="6Xm-Bd-rps"/>
+                <outlet property="ensacolarButton" destination="QTL-LN-Afq" id="UvC-Bg-g6V"/>
+                <outlet property="fotoImageView" destination="oYb-3e-qeK" id="lPu-qN-xg5"/>
+                <outlet property="nomeLabel" destination="Bvq-jl-wbq" id="1Ad-4T-OSa"/>
+                <outlet property="precoLabel" destination="RxS-DW-UVM" id="NXv-9C-Xjy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diF-UO-zvS">
+                    <rect key="frame" x="10" y="54" width="41" height="42"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" image="xmark" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="toqueFechar:" destination="-1" eventType="touchUpInside" id="URy-qw-Szm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-4C-Kcf">
+                    <rect key="frame" x="358.66666666666669" y="54" width="45.333333333333314" height="42"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" image="heart" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-TI-UsS">
+                    <rect key="frame" x="0.0" y="103.99999999999997" width="414" height="332.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-3e-qeK">
+                            <rect key="frame" x="147" y="0.0" width="120" height="224"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="224" id="SYt-GM-LYd"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do produto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvq-jl-wbq">
+                            <rect key="frame" x="85.666666666666686" y="232" width="243" height="34.666666666666686"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-DW-UVM">
+                            <rect key="frame" x="171.33333333333334" y="274.66666666666669" width="71.333333333333343" height="28.333333333333314"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrissao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-a6-PJP">
+                            <rect key="frame" x="164.33333333333334" y="311" width="85.666666666666657" height="21.333333333333314"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oYb-3e-qeK" firstAttribute="centerX" secondItem="eoc-TI-UsS" secondAttribute="centerX" id="80j-H8-YJM"/>
+                        <constraint firstItem="Bvq-jl-wbq" firstAttribute="centerX" secondItem="eoc-TI-UsS" secondAttribute="centerX" id="odJ-5E-0Rn"/>
+                        <constraint firstItem="oYb-3e-qeK" firstAttribute="top" secondItem="eoc-TI-UsS" secondAttribute="top" id="om9-9C-KJh"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTL-LN-Afq">
+                    <rect key="frame" x="20" y="782" width="374" height="40"/>
+                    <color key="backgroundColor" name="VerdaoBotao"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Sjz-AV-DOU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Adicionar à sacola"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="diF-UO-zvS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="0SV-qa-4mW"/>
+                <constraint firstItem="gHY-4C-Kcf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Bhc-LY-4NW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QTL-LN-Afq" secondAttribute="bottom" constant="40" id="N6Y-oS-q5X"/>
+                <constraint firstItem="QTL-LN-Afq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="OXt-Dp-3Fd"/>
+                <constraint firstItem="diF-UO-zvS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Rir-qU-tnc"/>
+                <constraint firstItem="eoc-TI-UsS" firstAttribute="top" secondItem="diF-UO-zvS" secondAttribute="top" constant="50" id="SsO-TU-wDl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eoc-TI-UsS" secondAttribute="trailing" id="ajV-SW-H64"/>
+                <constraint firstItem="eoc-TI-UsS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hEU-cX-I7W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QTL-LN-Afq" secondAttribute="trailing" constant="20" id="stn-du-lMe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gHY-4C-Kcf" secondAttribute="trailing" constant="10" id="u9G-kS-1v3"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="VerdaoBotao">
+            <color red="0.4779999852180481" green="0.69800001382827759" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

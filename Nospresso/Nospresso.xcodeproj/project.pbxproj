@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		9A8B12FA108C8AEBF2CDD669 /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF274B646CCBB84109EA08E /* Pods_Nospresso.framework */; };
 		AD6A11DBD19EE7299938A86C /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAF8598843846CCE852144D /* Pods_NospressoTests.framework */; };
+		F12CF41B254794AF00CF1558 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CF41A254794AF00CF1558 /* FavoritosViewController.swift */; };
+		F1475A122544508300D85041 /* DetalheProdutoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */; };
+		F1475A132544508300D85041 /* DetalheProdutoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */; };
+		F1475A152544573500D85041 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A142544573500D85041 /* Produto.swift */; };
+		F1475A1C25445E4900D85041 /* CarregamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A1A25445E4900D85041 /* CarregamentoViewController.swift */; };
+		F1475A1D25445E4900D85041 /* CarregamentoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1475A1B25445E4900D85041 /* CarregamentoViewController.xib */; };
+		F1475A1F2544604C00D85041 /* CarregamentoViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A1E2544604C00D85041 /* CarregamentoViewType.swift */; };
+		F1475A22254466B500D85041 /* Favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A21254466B500D85041 /* Favoritos.swift */; };
+		F1475A242544695A00D85041 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A232544695A00D85041 /* Favorito.swift */; };
+		F1475A262544752400D85041 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A252544752400D85041 /* FavoritoTableViewCell.swift */; };
 		F14C8B3E253B167E001255AE /* MenuProdutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C8B3D253B167E001255AE /* MenuProdutosViewController.swift */; };
 		F14C8B41253B1E45001255AE /* UIViewController+Barbadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C8B40253B1E45001255AE /* UIViewController+Barbadas.swift */; };
 		F14C8B44253B2E91001255AE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C8B43253B2E91001255AE /* R.generated.swift */; };
@@ -86,6 +96,16 @@
 		DBDEF3F052D525E3384C7D59 /* Pods-Nospresso-NospressoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.release.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCF274B646CCBB84109EA08E /* Pods_Nospresso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E588FFE6B56AC8645B9B1EC1 /* Pods-Nospresso-NospressoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F12CF41A254794AF00CF1558 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
+		F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheProdutoModalViewController.swift; sourceTree = "<group>"; };
+		F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheProdutoModalViewController.xib; sourceTree = "<group>"; };
+		F1475A142544573500D85041 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		F1475A1A25445E4900D85041 /* CarregamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewController.swift; sourceTree = "<group>"; };
+		F1475A1B25445E4900D85041 /* CarregamentoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarregamentoViewController.xib; sourceTree = "<group>"; };
+		F1475A1E2544604C00D85041 /* CarregamentoViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewType.swift; sourceTree = "<group>"; };
+		F1475A21254466B500D85041 /* Favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritos.swift; sourceTree = "<group>"; };
+		F1475A232544695A00D85041 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
+		F1475A252544752400D85041 /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		F14C8B3D253B167E001255AE /* MenuProdutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProdutosViewController.swift; sourceTree = "<group>"; };
 		F14C8B40253B1E45001255AE /* UIViewController+Barbadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Barbadas.swift"; sourceTree = "<group>"; };
 		F14C8B43253B2E91001255AE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -192,6 +212,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F1475A0F2544502F00D85041 /* DetalheProdutoModal */ = {
+			isa = PBXGroup;
+			children = (
+				F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */,
+				F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */,
+			);
+			path = DetalheProdutoModal;
+			sourceTree = "<group>";
+		};
+		F1475A1625445DE700D85041 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				F1475A1725445E1700D85041 /* Carregamento */,
+				F1475A0F2544502F00D85041 /* DetalheProdutoModal */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		F1475A1725445E1700D85041 /* Carregamento */ = {
+			isa = PBXGroup;
+			children = (
+				F1475A1A25445E4900D85041 /* CarregamentoViewController.swift */,
+				F1475A1B25445E4900D85041 /* CarregamentoViewController.xib */,
+				F1475A1E2544604C00D85041 /* CarregamentoViewType.swift */,
+			);
+			path = Carregamento;
+			sourceTree = "<group>";
+		};
+		F1475A202544669E00D85041 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				F1475A21254466B500D85041 /* Favoritos.swift */,
+				F1475A252544752400D85041 /* FavoritoTableViewCell.swift */,
+				F12CF41A254794AF00CF1558 /* FavoritosViewController.swift */,
+			);
+			path = Favoritos;
+			sourceTree = "<group>";
+		};
 		F14C8B3F253B1E28001255AE /* Extensoes */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +325,7 @@
 		F19D24A72536390300FA7B4F /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				F1475A1625445DE700D85041 /* Componentes */,
 				F14C8B43253B2E91001255AE /* R.generated.swift */,
 				F14C8B3F253B1E28001255AE /* Extensoes */,
 				F1C232AD2538F3A800A3DD78 /* Modulos */,
@@ -310,6 +369,8 @@
 				F19D24E425365D1300FA7B4F /* Item.swift */,
 				F19D24E625365D6B00FA7B4F /* Acessorio.swift */,
 				F19D24E825365DAD00FA7B4F /* Maquina.swift */,
+				F1475A142544573500D85041 /* Produto.swift */,
+				F1475A232544695A00D85041 /* Favorito.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -372,6 +433,7 @@
 		F1C232AD2538F3A800A3DD78 /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				F1475A202544669E00D85041 /* Favoritos */,
 				F1B8FF87254226D700F31E48 /* Maquinas */,
 				F18CB9CC253F769B00CEDA4A /* DetalheCafe */,
 				F1C232AE2538F3B300A3DD78 /* Cafes */,
@@ -506,6 +568,7 @@
 				F1C232A52538EAC000A3DD78 /* OpenSans-LightItalic.ttf in Resources */,
 				F1C232A72538EAC000A3DD78 /* OpenSans-SemiBold.ttf in Resources */,
 				F1B8FF8625421C0500F31E48 /* MedidaView.xib in Resources */,
+				F1475A1D25445E4900D85041 /* CarregamentoViewController.xib in Resources */,
 				F1C232AB2538EAC000A3DD78 /* OpenSans-BoldItalic.ttf in Resources */,
 				F19D24B52536390500FA7B4F /* LaunchScreen.storyboard in Resources */,
 				F1B8FF8B2542271700F31E48 /* MaquinasViewController.xib in Resources */,
@@ -515,6 +578,7 @@
 				F1C232AC2538EAC000A3DD78 /* OpenSans-Bold.ttf in Resources */,
 				F19D24B02536390300FA7B4F /* Main.storyboard in Resources */,
 				F1C232A92538EAC000A3DD78 /* OpenSans-ExtraBold.ttf in Resources */,
+				F1475A132544508300D85041 /* DetalheProdutoModalViewController.xib in Resources */,
 				F14C8B4C253B312E001255AE /* CategoriaDeCafeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,24 +748,32 @@
 				F1C232B22538F99100A3DD78 /* CafeTableViewCell.swift in Sources */,
 				F19D24E32536593E00FA7B4F /* Endpoint.swift in Sources */,
 				F1B8FF8425421BE000F31E48 /* MedidaView.swift in Sources */,
+				F1475A22254466B500D85041 /* Favoritos.swift in Sources */,
 				F14C8B4E253B3C2D001255AE /* UIImageView+CarregarImagem.swift in Sources */,
 				F1B8FF9425422EB800F31E48 /* MaquinasPresenter.swift in Sources */,
 				F14C8B46253B2F3C001255AE /* Pseudonimos.swift in Sources */,
+				F12CF41B254794AF00CF1558 /* FavoritosViewController.swift in Sources */,
 				F1B8FF8F25422B6C00F31E48 /* MaquinaCollectionViewCell.swift in Sources */,
 				F14C8B44253B2E91001255AE /* R.generated.swift in Sources */,
 				F18CB9D3253F877500CEDA4A /* DetalheCafePresenter.swift in Sources */,
+				F1475A1F2544604C00D85041 /* CarregamentoViewType.swift in Sources */,
 				F14C8B3E253B167E001255AE /* MenuProdutosViewController.swift in Sources */,
+				F1475A242544695A00D85041 /* Favorito.swift in Sources */,
 				F1C232B02538F3CB00A3DD78 /* CafesTableViewController.swift in Sources */,
+				F1475A122544508300D85041 /* DetalheProdutoModalViewController.swift in Sources */,
+				F1475A262544752400D85041 /* FavoritoTableViewCell.swift in Sources */,
 				F19D24E12536591200FA7B4F /* Api.swift in Sources */,
 				F18CB9D1253F811B00CEDA4A /* ContadorIntensidadeStackView.swift in Sources */,
 				F19D24AD2536390300FA7B4F /* ViewController.swift in Sources */,
 				F15BDD15253FA7A600127872 /* Double+Dinheiros.swift in Sources */,
 				F14C8B4A253B30E6001255AE /* CategoriaDeCafeHeaderView.swift in Sources */,
+				F1475A1C25445E4900D85041 /* CarregamentoViewController.swift in Sources */,
 				F18CB9CE253F76B700CEDA4A /* DetalheCafeViewController.swift in Sources */,
 				F14C8B41253B1E45001255AE /* UIViewController+Barbadas.swift in Sources */,
 				F19D24DA2536582600FA7B4F /* CategoriaCafe.swift in Sources */,
 				F1B8FF8A2542271700F31E48 /* MaquinasViewController.swift in Sources */,
 				F19D24E525365D1300FA7B4F /* Item.swift in Sources */,
+				F1475A152544573500D85041 /* Produto.swift in Sources */,
 				F19D24A92536390300FA7B4F /* AppDelegate.swift in Sources */,
 				F19D24DC2536587B00FA7B4F /* Cafe.swift in Sources */,
 				F18CB9D5253F87F500CEDA4A /* DetalheCafe+Protocolo.swift in Sources */,

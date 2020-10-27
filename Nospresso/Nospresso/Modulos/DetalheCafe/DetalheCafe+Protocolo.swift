@@ -13,10 +13,13 @@ protocol DetalheCafeViewType {
     
     func exibirDados(do cafe: Cafe)
     
+    func configurarBotaoFavoritismo(_: Bool)
+    
 }
 
 protocol DetalheCafePresenterType {
     
     func telaCarregou()
+    func apertouFavoritar()
     
 }

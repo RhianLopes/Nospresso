@@ -22,6 +22,11 @@ class DetalheCafeViewController: UIViewController {
         
         presenter?.telaCarregou()
     }
+    
+    @objc
+    func toqueFavorito() {
+        presenter?.apertouFavoritar()
+    }
 }
 
 extension DetalheCafeViewController: DetalheCafeViewType {
@@ -50,5 +55,15 @@ extension DetalheCafeViewController: DetalheCafeViewType {
             
             self.medidaStackView.addArrangedSubview(UIView())
         }
+    }
+    
+    func configurarBotaoFavoritismo(_ favoritado: Bool) {
+        let imagem = favoritado ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        let tintura = favoritado ? Paleta.vermelhoAmor() : .black
+        
+        let botaoDeAcao = UIBarButtonItem.init(image: imagem, style: .plain, target: self, action: #selector(toqueFavorito))
+        botaoDeAcao.tintColor = tintura
+        
+        navigationItem.rightBarButtonItem = botaoDeAcao
     }
 }

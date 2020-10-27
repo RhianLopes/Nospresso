@@ -7,12 +7,13 @@
 
 import Foundation
 
-public struct Maquina: Decodable {
+public struct Maquina: Produto {
     
     let id: Int
     let nome: String
     let preco: Double
     let imagem: String
     let descricao: String
+    var tipo: TipoProduto { .maquina }
     
 }

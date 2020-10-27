@@ -21,9 +21,11 @@ class MaquinasPresenter: NSObject {
 extension MaquinasPresenter: MaquinasPresenterType {
     
     func telaCarregou() {
+        self.view.exibirCarregamento()
         api.requisitar(endpoint: .maquinas) { (maquinas: [Maquina]) in
             self.maquinas = maquinas
             DispatchQueue.main.async {
+                self.view.dispensarCarregamento()
                 self.view.recarregarColecao()
             }
         } falha: { (erro) in
