@@ -9,7 +9,7 @@ import Foundation
 
 public struct Acessorio: Decodable {
     
-    let categoria: Int
+    let categoria: String
     let itens: [Item]
     
 }

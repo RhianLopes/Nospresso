@@ -13,6 +13,10 @@ class DetalheCafeViewController: UIViewController {
     @IBOutlet weak var intensidadeStackView: ContadorIntensidadeStackView!
     @IBOutlet weak var medidaStackView: UIStackView!
     @IBOutlet weak var intensidadeLabel: UILabel!
+    @IBOutlet weak var tituloLabel: UILabel!
+    @IBOutlet weak var origemDescricaoLabel: UILabel!
+    @IBOutlet weak var torrefacaoDescricaoLabel: UILabel!
+    @IBOutlet weak var perfilAromaticoDescricaoLabel: UILabel!
     
     
     var presenter: DetalheCafePresenter?
@@ -38,6 +42,11 @@ extension DetalheCafeViewController: DetalheCafeViewType {
     func exibirDados(do cafe: Cafe) {
         DispatchQueue.main.async {
             self.cafeImageView.carregarImagem(usando: cafe.imagem)
+            self.tituloLabel.text = cafe.descricao
+            self.origemDescricaoLabel.text = cafe.origem
+            self.torrefacaoDescricaoLabel.text = cafe.torrefacao
+            self.perfilAromaticoDescricaoLabel.text = cafe.perfilAromatico
+            
             
             if let intensidade = cafe.intensidade {
                 self.intensidadeStackView.configurar(para: intensidade)
