@@ -12,6 +12,8 @@
 		F121A60A254A1CEA007C2F4C /* AcessoriosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121A609254A1CEA007C2F4C /* AcessoriosTableViewController.swift */; };
 		F12CF41B254794AF00CF1558 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CF41A254794AF00CF1558 /* FavoritosViewController.swift */; };
 		F12D41C5254A256500F04BAB /* AcessorioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D41C4254A256500F04BAB /* AcessorioTableViewCell.swift */; };
+		F12D41C7254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D41C6254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift */; };
+		F12D41C9254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12D41C8254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib */; };
 		F1475A122544508300D85041 /* DetalheProdutoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */; };
 		F1475A132544508300D85041 /* DetalheProdutoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */; };
 		F1475A152544573500D85041 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A142544573500D85041 /* Produto.swift */; };
@@ -101,6 +103,8 @@
 		F121A609254A1CEA007C2F4C /* AcessoriosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessoriosTableViewController.swift; sourceTree = "<group>"; };
 		F12CF41A254794AF00CF1558 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		F12D41C4254A256500F04BAB /* AcessorioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessorioTableViewCell.swift; sourceTree = "<group>"; };
+		F12D41C6254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeAcessorioHeaderView.swift; sourceTree = "<group>"; };
+		F12D41C8254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeAcessorioHeaderView.xib; sourceTree = "<group>"; };
 		F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheProdutoModalViewController.swift; sourceTree = "<group>"; };
 		F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheProdutoModalViewController.xib; sourceTree = "<group>"; };
 		F1475A142544573500D85041 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				F12D41C4254A256500F04BAB /* AcessorioTableViewCell.swift */,
+				F12D41C6254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift */,
+				F12D41C8254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib */,
 			);
 			path = Celulas;
 			sourceTree = "<group>";
@@ -594,6 +600,7 @@
 				F1C232AB2538EAC000A3DD78 /* OpenSans-BoldItalic.ttf in Resources */,
 				F19D24B52536390500FA7B4F /* LaunchScreen.storyboard in Resources */,
 				F1B8FF8B2542271700F31E48 /* MaquinasViewController.xib in Resources */,
+				F12D41C9254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib in Resources */,
 				F1B8FF9025422B6C00F31E48 /* MaquinaCollectionViewCell.xib in Resources */,
 				F1C232A82538EAC000A3DD78 /* OpenSans-Light.ttf in Resources */,
 				F19D24B22536390500FA7B4F /* Assets.xcassets in Resources */,
@@ -793,6 +800,7 @@
 				F18CB9CE253F76B700CEDA4A /* DetalheCafeViewController.swift in Sources */,
 				F14C8B41253B1E45001255AE /* UIViewController+Barbadas.swift in Sources */,
 				F12D41C5254A256500F04BAB /* AcessorioTableViewCell.swift in Sources */,
+				F12D41C7254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift in Sources */,
 				F19D24DA2536582600FA7B4F /* CategoriaCafe.swift in Sources */,
 				F1B8FF8A2542271700F31E48 /* MaquinasViewController.swift in Sources */,
 				F19D24E525365D1300FA7B4F /* Item.swift in Sources */,

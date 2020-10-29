@@ -52,13 +52,13 @@ extension AcessoriosTableViewController {
         acessorios.count
     }
     
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let cabecalho = R.nib.categoriaDeCafeHeaderView.firstView(owner: nil)
-//
-//        cabecalho?.configurar(para: acessorios[section])
-//
-//        return cabecalho
-//    }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cabecalho = R.nib.categoriaDeAcessorioHeaderView.firstView(owner: nil)
+
+        cabecalho?.configurar(com: acessorios[section])
+
+        return cabecalho
+    }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat { 40 }
 

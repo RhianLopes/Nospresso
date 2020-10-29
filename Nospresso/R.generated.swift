@@ -530,10 +530,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 6 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
   struct nib {
     /// Nib `CarregamentoViewController`.
     static let carregamentoViewController = _R.nib._CarregamentoViewController()
+    /// Nib `CategoriaDeAcessorioHeaderView`.
+    static let categoriaDeAcessorioHeaderView = _R.nib._CategoriaDeAcessorioHeaderView()
     /// Nib `CategoriaDeCafeHeaderView`.
     static let categoriaDeCafeHeaderView = _R.nib._CategoriaDeCafeHeaderView()
     /// Nib `DetalheProdutoModalViewController`.
@@ -550,6 +552,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.carregamentoViewController) instead")
     static func carregamentoViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.carregamentoViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CategoriaDeAcessorioHeaderView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.categoriaDeAcessorioHeaderView) instead")
+    static func categoriaDeAcessorioHeaderView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.categoriaDeAcessorioHeaderView)
     }
     #endif
 
@@ -595,6 +605,10 @@ struct R: Rswift.Validatable {
 
     static func carregamentoViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.carregamentoViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func categoriaDeAcessorioHeaderView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CategoriaDeAcessorioHeaderView? {
+      return R.nib.categoriaDeAcessorioHeaderView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CategoriaDeAcessorioHeaderView
     }
 
     static func categoriaDeCafeHeaderView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CategoriaDeCafeHeaderView? {
@@ -670,6 +684,17 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _CategoriaDeAcessorioHeaderView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CategoriaDeAcessorioHeaderView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CategoriaDeAcessorioHeaderView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CategoriaDeAcessorioHeaderView
       }
 
       fileprivate init() {}
