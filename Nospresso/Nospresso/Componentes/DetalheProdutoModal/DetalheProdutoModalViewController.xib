@@ -44,28 +44,28 @@
                     </state>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-TI-UsS">
-                    <rect key="frame" x="0.0" y="103.99999999999997" width="414" height="332.33333333333326"/>
+                    <rect key="frame" x="16" y="104.00000000000003" width="382" height="327.66666666666674"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-3e-qeK">
-                            <rect key="frame" x="147" y="0.0" width="120" height="224"/>
+                            <rect key="frame" x="131" y="0.0" width="120" height="224"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="224" id="SYt-GM-LYd"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do produto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvq-jl-wbq">
-                            <rect key="frame" x="85.666666666666686" y="232" width="243" height="34.666666666666686"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                            <rect key="frame" x="86.333333333333329" y="232" width="209.33333333333337" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-DW-UVM">
-                            <rect key="frame" x="171.33333333333334" y="274.66666666666669" width="71.333333333333343" height="28.333333333333314"/>
+                            <rect key="frame" x="155.33333333333334" y="270" width="71.333333333333343" height="28.333333333333314"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrissao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-a6-PJP">
-                            <rect key="frame" x="164.33333333333334" y="311" width="85.666666666666657" height="21.333333333333314"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrissao" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-a6-PJP">
+                            <rect key="frame" x="148.33333333333334" y="306.33333333333331" width="85.666666666666657" height="21.333333333333314"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -97,8 +97,8 @@
                 <constraint firstItem="QTL-LN-Afq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="OXt-Dp-3Fd"/>
                 <constraint firstItem="diF-UO-zvS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Rir-qU-tnc"/>
                 <constraint firstItem="eoc-TI-UsS" firstAttribute="top" secondItem="diF-UO-zvS" secondAttribute="top" constant="50" id="SsO-TU-wDl"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eoc-TI-UsS" secondAttribute="trailing" id="ajV-SW-H64"/>
-                <constraint firstItem="eoc-TI-UsS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hEU-cX-I7W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eoc-TI-UsS" secondAttribute="trailing" constant="16" id="ajV-SW-H64"/>
+                <constraint firstItem="eoc-TI-UsS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hEU-cX-I7W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QTL-LN-Afq" secondAttribute="trailing" constant="20" id="stn-du-lMe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gHY-4C-Kcf" secondAttribute="trailing" constant="10" id="u9G-kS-1v3"/>
             </constraints>

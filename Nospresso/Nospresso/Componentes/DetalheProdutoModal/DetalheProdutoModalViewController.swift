@@ -9,7 +9,9 @@ import UIKit
 
 class DetalheProdutoModalViewController: UIViewController {
     
-    let produto: Produto
+    let produto: Produto?
+    
+    let item: Item?
     
     @IBOutlet weak var fotoImageView: UIImageView!
     @IBOutlet weak var nomeLabel: UILabel!
@@ -30,6 +32,13 @@ class DetalheProdutoModalViewController: UIViewController {
     
     init(produto: Produto) {
         self.produto = produto
+        self.item = nil
+        super.init(nibName: R.nib.detalheProdutoModalViewController.name, bundle: .main)
+    }
+    
+    init(item: Item) {
+        self.produto = nil
+        self.item = item
         super.init(nibName: R.nib.detalheProdutoModalViewController.name, bundle: .main)
     }
     
@@ -41,10 +50,18 @@ class DetalheProdutoModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fotoImageView.carregarImagem(usando: produto.imagem)
-        nomeLabel.text = produto.nome
-        precoLabel.text = produto.preco.comoDinheiro
-        descricaoLabel.text = produto.descricao
+        if let produto = produto {
+            fotoImageView.carregarImagem(usando: produto.imagem)
+            nomeLabel.text = produto.nome
+            precoLabel.text = produto.preco.comoDinheiro
+            descricaoLabel.text = produto.descricao
+        } else if let item = item {
+            fotoImageView.carregarImagem(usando: item.imagem)
+            nomeLabel.text = item.nome
+            precoLabel.text = item.preco.comoDinheiro
+            descricaoLabel.text = item.descricao
+        }
+        
     }
 
 }

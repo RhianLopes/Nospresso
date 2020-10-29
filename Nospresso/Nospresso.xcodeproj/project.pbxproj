@@ -14,6 +14,7 @@
 		F12D41C5254A256500F04BAB /* AcessorioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D41C4254A256500F04BAB /* AcessorioTableViewCell.swift */; };
 		F12D41C7254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D41C6254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift */; };
 		F12D41C9254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12D41C8254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib */; };
+		F12D41CB254A4CB900F04BAB /* AcessoriosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D41CA254A4CB900F04BAB /* AcessoriosPresenter.swift */; };
 		F1475A122544508300D85041 /* DetalheProdutoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */; };
 		F1475A132544508300D85041 /* DetalheProdutoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */; };
 		F1475A152544573500D85041 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1475A142544573500D85041 /* Produto.swift */; };
@@ -105,6 +106,7 @@
 		F12D41C4254A256500F04BAB /* AcessorioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessorioTableViewCell.swift; sourceTree = "<group>"; };
 		F12D41C6254A460600F04BAB /* CategoriaDeAcessorioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeAcessorioHeaderView.swift; sourceTree = "<group>"; };
 		F12D41C8254A461900F04BAB /* CategoriaDeAcessorioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeAcessorioHeaderView.xib; sourceTree = "<group>"; };
+		F12D41CA254A4CB900F04BAB /* AcessoriosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessoriosPresenter.swift; sourceTree = "<group>"; };
 		F1475A102544508300D85041 /* DetalheProdutoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheProdutoModalViewController.swift; sourceTree = "<group>"; };
 		F1475A112544508300D85041 /* DetalheProdutoModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheProdutoModalViewController.xib; sourceTree = "<group>"; };
 		F1475A142544573500D85041 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			children = (
 				F12D41C3254A254F00F04BAB /* Celulas */,
 				F121A609254A1CEA007C2F4C /* AcessoriosTableViewController.swift */,
+				F12D41CA254A4CB900F04BAB /* AcessoriosPresenter.swift */,
 			);
 			path = Acessorios;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 				F1475A22254466B500D85041 /* Favoritos.swift in Sources */,
 				F14C8B4E253B3C2D001255AE /* UIImageView+CarregarImagem.swift in Sources */,
 				F1B8FF9425422EB800F31E48 /* MaquinasPresenter.swift in Sources */,
+				F12D41CB254A4CB900F04BAB /* AcessoriosPresenter.swift in Sources */,
 				F14C8B46253B2F3C001255AE /* Pseudonimos.swift in Sources */,
 				F12CF41B254794AF00CF1558 /* FavoritosViewController.swift in Sources */,
 				F1B8FF8F25422B6C00F31E48 /* MaquinaCollectionViewCell.swift in Sources */,

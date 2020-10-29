@@ -9,6 +9,8 @@ import UIKit
 
 class AcessoriosTableViewController: UITableViewController {
     
+    typealias Presenter = MaquinasPresenterType & UICollectionViewDataSource
+    
     private let api = Api()
     private var acessorios: [Acessorio] = []
     
@@ -42,7 +44,7 @@ extension AcessoriosTableViewController {
 }
 
 //MARK: UITableViewDelegate
-extension AcessoriosTableViewController {
+extension AcessoriosTableViewController: UICollectionViewDelegateFlowLayout {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         acessorios[section].itens.count
@@ -70,6 +72,13 @@ extension AcessoriosTableViewController {
 
         celula.configurar(com: acessorio)
         return celula
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = acessorios[indexPath.section].itens[indexPath.row]
+        let vc = DetalheProdutoModalViewController(item: item)
+        
+        present(vc, animated: true)
     }
 }
 
